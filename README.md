@@ -1,14 +1,16 @@
-# Une template pour les projets CMake de la SAE
+# Rock Paper Scissors Lan
 
-Ce repo sert de template pour les projets CMake fait a la SAE institute.
-Ils incluent tous les fichiers nécéssaires afin de compiler un projet SFML et Box2D avec vcpkg.
+Project using sfml tcp sockets (mostly) blocking.
+Project written for a formative as part of the network module during bachelor's in games programming.
 
-## Comment utiliser cette template ?
+Written in about 25 hours.
 
-1. Créer un répo qui se base sur cette template
-2. Renomer le dossier "project-name" avec le nom de votre projet
-3. Chercher les "Todo" et renomer les "project-name" avec le nom de votre projet
-  (Dans `vcpkg.json`, `CMakeLists.txt`, et dans le dossier du projet / solution)
-4. Chercher les "Todo" et commenter/décommenter les lignes si vous ne voulez pas que la console s'affiche
-5. Ouvrir le dossier avec Visual Studio et choisir le bon target de build.
-6. Bosser !
+## How to use?
+
+1. Start server
+2. Start client and connect to the server (an interface is provided to connect to a specific LAN ip)
+3. Wait for both clients to connect (two clients max)
+4. Enjoy your console turned based ascii RPS!
+
+##Disclaimer
+Because of the heavy use of system() functions, program should only be able to run propperly on windows os.
